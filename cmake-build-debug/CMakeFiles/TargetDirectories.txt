@@ -1,0 +1,3 @@
+D:/kolya/Siemens Software Deplome/version control task/cmake-build-debug/CMakeFiles/version_control_task.dir
+D:/kolya/Siemens Software Deplome/version control task/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/kolya/Siemens Software Deplome/version control task/cmake-build-debug/CMakeFiles/rebuild_cache.dir
