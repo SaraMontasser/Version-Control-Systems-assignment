@@ -12,12 +12,17 @@ int getSum(vector<int> &v) {
     return totalSum;
 }
 
+int getAverage(vector<int> &v) {
+    int totalSum = getSum(v);
+    return totalSum / vectorSize;
+}
+
 int main() {
     vector<int> v(vectorSize);
     for (int i = 0; i < vectorSize; i++) {
         v[i] = i + 1;
     }
-    int answer = getSum(v);
-    cout << "The sum is " << answer;
+    int answer = getSum(v), average = getAverage(v);
+    cout << "The sum is " << answer << endl << "The average is " << average;
     return 0;
 }
