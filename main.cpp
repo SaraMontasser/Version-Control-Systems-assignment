@@ -32,9 +32,9 @@ int main() {
         v[i] = i + 1;
     }
 
-    int answer = getSum(v), average = getAverage(v), min_number = getMin(v);
-    
-    cout << "The sum is " << answer << endl << "The average is " << average << endl << "The minimum number is "
-         << min_number;
+    int sum_answer = getSum(v), average_answer = getAverage(v), min_answer = getMin(v);
+
+    cout << "The sum is " << sum_answer << endl << "The average is " << average_answer << endl
+         << "The minimum number is " << min_answer;
     return 0;
 }
