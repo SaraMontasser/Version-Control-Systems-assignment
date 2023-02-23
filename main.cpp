@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 #define vectorSize 10
 using namespace std;
@@ -17,12 +18,23 @@ int getAverage(vector<int> &v) {
     return totalSum / vectorSize;
 }
 
+int getMin(vector<int> &v) {
+    int min_number = v.front();
+    for (int i = 1; i < vectorSize; ++i) {
+        min_number = min(min_number, v[i]);
+    }
+    return min_number;
+}
+
 int main() {
     vector<int> v(vectorSize);
     for (int i = 0; i < vectorSize; i++) {
         v[i] = i + 1;
     }
-    int answer = getSum(v), average = getAverage(v);
-    cout << "The sum is " << answer << endl << "The average is " << average;
+
+    int answer = getSum(v), average = getAverage(v), min_number = getMin(v);
+    
+    cout << "The sum is " << answer << endl << "The average is " << average << endl << "The minimum number is "
+         << min_number;
     return 0;
 }
